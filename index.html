@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veterinary Learning Hub</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+}
+
+header {
+  background: #1e73be;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.container {
+  padding: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.card span {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  color: #777;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Veterinary Learning Hub</h1>
+  <p>Notes • Subjects • Chapters • Practical Knowledge</p>
+</header>
+
+<div class="container">
+  <div class="grid">
+
+    <div class="card" onclick="openSubject('anatomy')"><span>Anatomy</span></div>
+    <div class="card" onclick="openSubject('physiology')"><span>Physiology</span></div>
+    <div class="card" onclick="openSubject('biochemistry')"><span>Biochemistry</span></div>
+    <div class="card" onclick="openSubject('pharmacology')"><span>Pharmacology</span></div>
+    <div class="card" onclick="openSubject('pathology')"><span>Pathology</span></div>
+    <div class="card" onclick="openSubject('microbiology')"><span>Microbiology</span></div>
+    <div class="card" onclick="openSubject('parasitology')"><span>Parasitology</span></div>
+    <div class="card" onclick="openSubject('medicine')"><span>Veterinary Medicine</span></div>
+    <div class="card" onclick="openSubject('surgery')"><span>Surgery</span></div>
+    <div class="card" onclick="openSubject('gynecology')"><span>Gynecology & Obstetrics</span></div>
+    <div class="card" onclick="openSubject('nutrition')"><span>Animal Nutrition</span></div>
+    <div class="card" onclick="openSubject('husbandry')"><span>Animal Husbandry</span></div>
+    <div class="card" onclick="openSubject('extension')"><span>Extension Education</span></div>
+    <div class="card" onclick="openSubject('lpm')"><span>Livestock Production Management</span></div>
+    <div class="card" onclick="openSubject('lpt')"><span>Livestock Products Technology</span></div>
+    <div class="card" onclick="openSubject('genetics')"><span>Genetics & Breeding</span></div>
+    <div class="card" onclick="openSubject('poultry')"><span>Poultry Science</span></div>
+    <div class="card" onclick="openSubject('publichealth')"><span>Veterinary Public Health</span></div>
+
+  </div>
+</div>
+
+<footer>
+  © 2026 Veterinary Learning Hub | Built for Students & Farmers
+</footer>
+
+<script>
+function openSubject(subject) {
+  window.location.href = subject + ".html";
+}
+</script>
+
+</body>
+</html>
